@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.double-line {
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+    height: 10px; /* Adjust this height to control the space between the lines */
+}
+
+.double-line::before,
+.double-line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #e0e0e0;
+}
+
+.double-line::before {
+    top: 0;
+}
+
+.double-line::after {
+    bottom: 0;
+}
+
+.search-container {
+    margin-top: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input[type="search"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-right: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-item {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.news-item h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.news-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
+
+footer .dot {
+    color: #ff0000;
+}
